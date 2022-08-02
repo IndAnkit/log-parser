@@ -8,7 +8,7 @@ Use this command to clone and run.
 
 ```bash
 #clone the Repo
-git clone 
+git clone https://github.com/IndAnkit/log-parser.git
 
 
 #
