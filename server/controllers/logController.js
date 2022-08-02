@@ -14,7 +14,7 @@ const logMemoryUsage = (lineNr) => {
 		console.log("lineNr", lineNr);
 		const logData = lineNr.split(" - ");
 		let logJson = {};
-		let timestamp = new Date(logData[0]);
+		let timestamp = Date.parse(new Date(logData[0]));
 		let loglevel = logData[1];
 		let { err, transactionId } = JSON.parse(logData[2]) || {};
 		if (err) {
